@@ -17,6 +17,7 @@ pipeline {
             //   bat 'cd C:\\Program Files (x86)\\Jenkins\\ && type .\\jenkins.xml'
               bat 'copy /Y .\\images\\favicon.ico ..\\..\\war\\'
               bat 'copy /Y .\\images\\*.png ..\\..\\war\\images\\'
+              bat 'copy /Y .\\images\\jenkins.svg ..\\..\\war\\images\\'
           }
       }
   }
