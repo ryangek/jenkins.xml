@@ -15,7 +15,7 @@ pipeline {
           steps{
               bat 'dir'
               bat 'copy /Y .\\jenkins.xml ..\\..\\'
-              bat 'cd C:\\Program Files (x86)\\Jenkins\\ && dir'
+              bat 'cd C:\\Program Files (x86)\\Jenkins\\ && type .\\jenkins.xml'
           }
       }
   }
