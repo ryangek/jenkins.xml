@@ -13,9 +13,10 @@ pipeline {
       }
       stage('cmd'){
           steps{
-              bat 'dir'
-              bat 'copy /Y .\\jenkins.xml ..\\..\\'
-              bat 'cd C:\\Program Files (x86)\\Jenkins\\ && type .\\jenkins.xml'
+            //   bat 'copy /Y .\\jenkins.xml ..\\..\\'
+            //   bat 'cd C:\\Program Files (x86)\\Jenkins\\ && type .\\jenkins.xml'
+              bat 'copy /Y .\\favicon.ico ..\\..\\war\\'
+              bat 'copy /Y .\\*.png ..\\..\\war\\images\\'
           }
       }
   }
