@@ -13,7 +13,8 @@ pipeline {
       }
       stage('cmd'){
           steps{
-              bat 'dir && copy /Y .\\jenkins.xml C:\\Program Files (x86)\\Jenkins\\jenkins.xml'
+              bat 'dir'
+              bat 'copy /Y .\\jenkins.xml C:\\Program Files (x86)\\Jenkins\\'
               bat 'cd C:\\Program Files (x86)\\Jenkins\\ && dir'
           }
       }
