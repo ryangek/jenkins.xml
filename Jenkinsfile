@@ -8,7 +8,7 @@ pipeline {
   stages {
       stage('Code Quality') {
         steps {
-          osfBuilderSuiteStandaloneSonarLinter reportPath: 'sonar-reports', sourcePatterns: [[excludePatterns: [[excludePattern: '**/**.css']], sourcePattern: '**/**.js']]
+          osfBuilderSuiteStandaloneSonarLinter reportPath: 'sonar-reports', sourcePatterns: [[excludePatterns: [[excludePattern: './**/**.css']], sourcePattern: './**/**.js']]
         }
       }
       // stage('Console Hello World') {
